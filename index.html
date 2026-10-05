@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>甲的門禁卡</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- 開始畫面 -->
+    <section id="startScreen" class="screen">
+
+      <div class="card">
+
+        <div class="card-title">
+          查看甲的門禁卡
+        </div>
+
+        <div class="card-number">
+          ACCESS CARD A
+        </div>
+
+      </div>
+
+      <button id="startBtn" class="main-button">
+        開始
+      </button>
+
+    </section>
+
+
+    <!-- 第一題 -->
+    <section id="puzzleScreen" class="screen hidden">
+
+      <div class="puzzle-box">
+
+        <div class="question-number">
+          第一題
+        </div>
+
+        <h1>
+          請跟旁邊的新朋友討論出
+          <br>
+          三個你們的共同點
+        </h1>
+
+        <p class="hint">
+          請輸入具體、合理的共同點。
+        </p>
+
+        <input
+          class="answer-input"
+          id="answer1"
+          type="text"
+          placeholder="共同點 1，例如：我們都喜歡看電影"
+        >
+
+        <input
+          class="answer-input"
+          id="answer2"
+          type="text"
+          placeholder="共同點 2"
+        >
+
+        <input
+          class="answer-input"
+          id="answer3"
+          type="text"
+          placeholder="共同點 3"
+        >
+
+        <button id="submitBtn" class="main-button">
+          確認答案
+        </button>
+
+        <p id="message"></p>
+
+      </div>
+
+    </section>
+
+
+    <!-- 完成畫面 -->
+    <section id="resultScreen" class="screen hidden">
+
+      <h1 class="success-title">
+        找到新的線索
+      </h1>
+
+      <p class="success-text">
+        嫌疑人甲能通過以下道路
+      </p>
+
+      <div class="symbols">
+
+        <div class="symbol">
+          <div class="symbol-icon">🌙</div>
+          <div class="symbol-name">
+            月亮
+          </div>
+        </div>
+
+        <div class="symbol">
+          <div class="symbol-icon">🪶</div>
+          <div class="symbol-name">
+            羽毛
+          </div>
+        </div>
+
+        <div class="symbol">
+          <div class="symbol-icon">📖</div>
+          <div class="symbol-name">
+            書本
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
